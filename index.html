@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+<head>
+	<!--Meta Tag Start-->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="author" content="Jeffrey Johnson">
+		<meta name="keywords" content="HTML, CSS, XML, XHTML, JavaScript, PHP, jQUERY, MySQL">
+		<meta http-evquiv="refresh" content="30"><!--Meta tag will refresh document every 30 Seconds"-->
+	<!--Meta Tag End-->
+	
+		<title>Modern Website Design & Development Studios</title>
+		<link rel="stylesheet" type="text/css" href="/styles.css" />
+
+<!--Automatic Slideshow using JavaScript, HTML and CSS-->
+<style>
+		.slide-container {
+				position:relative;
+				max-width:100%;
+		}
+		
+		.slide img {
+				width:100%;
+				max-height:600px;
+		}
+		.effect{
+			animation-name:effect;
+			animation-duration:1s;
+			@keyframes effect{
+				from{
+					opacity:0,3;
+				}
+				to{
+					opacity:1;
+				}
+			
+			}
+		}
+		.dot-container{
+		text-align:center;
+		
+		}
+		span{
+			border-radius:50%;
+			height:15px;
+			width:15px;
+			background-color:blue;
+			display:inline-block;
+			transition:all 0.6s linear;
+		}
+		.active{
+			background-color:red;
+		}
+		
+</style>
+<!--Automatic Slideshow using JavaScript, HTML and CSS-->
+		
+</head>
+
+<body>
+
+<div class="header">
+  <h1>Modern Website Design & Development Studios</h1>
+ <!-- <p>Resize the browser window to see the effect.</p> -->
+</div>
+
+<div class="topnav">
+  <a href="https://www.modernwebsitedesign.net/">Home</a>
+  <a href="https://www.w3schools.com">W3Schools</a>
+ <!-- <a href="#">Link</a>
+  <a href="#" style="float:right">Link</a> -->
+</div>
+
+	<p>Thank you for visiting modernwebsitedesign.net. <br> We apologize for any inconvenience that this may cause you. This site is undergoing a site over haul and is a school project and it is not finished.<br> Please return soon. We will have it fixed ASAP (as soon as possible).<br>thank you for your patience. </p>
+<!--Automatic Slideshow using JavaScript, HTML and CSS-->	
+<div class="slide-container">
+		<div class="effect slide">
+				<img src="slide1.png"/>
+		</div>
+				<div class="effect slide">
+				<img src="slide2.png"/>
+		</div>
+				<div class="effect slide">
+				<img src="slide3.png"/> <!--Change slide1.jpg to pictures for MWDnet slideshow-->
+		</div>
+				</div>
+				<div class="effect slide">
+				<img src="slide4.png"/> <!--Change slide1.jpg to pictures for MWDnet slideshow-->
+		</div>
+				</div>
+				<div class="effect slide">
+				<img src="slide5.png"/> <!--Change slide1.jpg to pictures for MWDnet slideshow-->
+		</div>
+</div>
+
+		<div class="dot-container">
+				<span></span>
+				<span></span>
+				<span></span>
+				
+		</div>
+
+	
+<!--Automatic Slideshow using JavaScript, HTML and CSS-->
+
+<script>
+			var index=0;
+			show();
+			function show(){
+					var i;
+					var slides=document.getElementsByClassName("slide"); I
+					var dots=document.getElementsByTagName("span");
+					for(i=0;i<slide.length;i++){
+						slides[i].style.display=" none";
+					}
+					
+					index=index+1;
+					if(index>slides.length){
+						index=1;
+					}
+					for(i=0;i<dots.length;i++){
+						dots[i].classN=dots[i].className.replace(" active","");
+					}
+					
+					slides[index-1].style.display="block";
+					dots[index-1].className+=" active";
+					setTimeout(show,1500);
+			}
+</script>	
+<!--Automatic Slideshow using JavaScript, HTML and CSS-->
+	
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>TITLE HEADING</h2>
+      <h5>Title description, Dec 7, 2017</h5>
+      <div class="fakeimg" style="height:200px;">Image</div>
+      <p>Some text..</p>
+      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    </div>
+    <div class="card">
+      <h2>TITLE HEADING</h2>
+      <h5>Title description, Sep 2, 2017</h5>
+      <div class="fakeimg" style="height:200px;">Image</div>
+      <p>Some text..</p>
+      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>About Me</h2>
+      <div class="fakeimg" style="height:100px;">Image <img src="JJohnson.jpg" alt="Jeffrey Johnson"></div>
+      <p><h3>Jeffrey Johnson</h3><br>
+<h4>Website Designer and Developer, IT Technician, Photographer in Salt Lake City, Utah.</h4><br><br>
+Hello, I am a website designer, an IT technician and a photographer.<br><br>
+I am passionate about helping people with their technical problems with their computer.<br>For about 11 years as an IT Technician I have custom built computers and fixed many computer issues and errors for people in the Salt Lake City area.<br>
+I also enjoy Photography and a Web Design.<br>
+I have studied as a Network Systems Administrator at ITT Technical Institute.<br>
+I have studied Photography and Website Design at Salt Lake Community College.<br>
+I have worked with a wide variety of clients over the years and I look forward to serving you!<br><br>
+
+Let me make your work, take less work!<br><br>
+
+“Make everything as simple as possible, but not simpler.”<br>
+Albert Einstein</p>
+    </div>
+    <div class="card">
+      <h3>Popular Post</h3>
+      <div class="fakeimg"><p>Image</p></div>
+      <div class="fakeimg"><p>Image</p></div>
+      <div class="fakeimg"><p>Image</p></div>
+    </div>
+    <div class="card">
+      <h3>Follow Me</h3>
+      <p>Some text..</p>
+    </div>
+  </div>
+</div>
+<p>Ladies and Gentlemen, this is the moment you have all been waiting for!<br><br> We have all been looking for the cut above the rest in the media world.<br> Here’s the multimedia firm that will deliver the ultimate media presentation that you cannot ignore.<br> Taking your breathe and stealing your mind…. And all that was expected of others will be left behind, and your expectations are out done by our creative team.<br> So, tell us what you want to see, its where all that is possible is all coming true in a multimedia world.<br>The creative team at Modern Website Design & Development have grand designs of the brightest colors and in our heads dreaming up ways to make the impossible become possible.<br> We all have a million dreams or more that drive us to do better, We all have a vision what the world could be.<br> Because a million dreams is what its going to take to make what seems impossible turn into possible.<br> We all need to dream big and see the potential that we can be. If you have a dream… make it happen! </p>
+	
+	
+<div class="footer">
+  <h2>Copyright &copy 2019 - All Rights Reserved</h2>
+</div>
+
+</body>
+
+</html>
