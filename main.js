@@ -1,9 +1,9 @@
 // Responsive Animated 3D Navigation Bar | HTML and CSS and JavaScript
 
-selector(s: ".menu").addEventListener('click', function() {
-	this.classList.toggle(token: 'open');
-	selector(s: 'header').classList.toggle(token:'open');
-	selector(s: '.overlay').classList.toggle(token:'open');
+selector(".menu").addEventListener('click', function() {
+	this.classList.toggle('open');
+	selector('header').classList.toggle('open');
+	selector('.overlay').classList.toggle('open');
 });	
 
 function selector(s) {
